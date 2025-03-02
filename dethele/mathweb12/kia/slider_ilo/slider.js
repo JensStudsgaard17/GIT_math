@@ -25,7 +25,7 @@
 		};
 
 		var knapFlyt=function(e){
-			if (sel) {//her afl�ses de aktuelle musekoordinater, knappen flyttes og v�rdien vises (men ikke i IE)
+			if (sel) {//her afl ses de aktuelle musekoordinater, knappen flyttes og v rdien vises (men ikke i IE)
 				var musPos=museKoord(e);
 				if (musPos<5) musPos=5; if (musPos>205) musPos=205;
 				knap.style.left=musPos+"px";
@@ -62,7 +62,7 @@
 		slider.style.left=this.x+"px";
 		slider.style.width=226+"px";
 		slider.style.height=48+"px";
-		slider.style.background="#ffffff url(../slider/slider_bg.png) 0 0 no-repeat";//url(../slider/rail.jpg) 12px 26px no-repeat";
+		slider.style.background="#ffffff url(../slider_ilo/slider_bg.png) 0 0 no-repeat";//url(../slider/rail.jpg) 12px 26px no-repeat";
 		//slider.style.border="1px dotted "+this.color;
 
 		var knap=document.createElement("div");
@@ -77,7 +77,7 @@
 		knap.style.left=5+knapinit+"px";
 		knap.style.width=15+"px";
 		knap.style.height=20+"px";
-		knap.style.background="url(../slider/pil.gif) 0 0 no-repeat";
+		knap.style.background="url(../slider_ilo/pil.png) 0 0 no-repeat";
 
 		//knap.onmousedown=knapNed;
 		//knap.onmouseup=knapOp;

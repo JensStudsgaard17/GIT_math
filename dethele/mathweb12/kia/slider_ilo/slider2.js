@@ -13,13 +13,13 @@
 		var knapNed=function(){
 			sel=true;
 			knap.style.zIndex=1;
-			valc.style.background="#fff";
+			//valc.style.background="#fff";
 		};
 
 		var knapOp=function(){
 			sel=false;
 			knap.style.zIndex=0;
-			valc.style.background="#ccc";
+			//valc.style.background="#ccc";
 			valc.focus();//A trick to get FireFox working
 		};
 
@@ -61,7 +61,7 @@
 		slider.style.left=this.x+"px";
 		slider.style.width=226+"px";//224
 		slider.style.height=48+"px";//45
-		slider.style.background="#ffffff url(../slider/slider_bg.png) 0 0 no-repeat";//"#ffffff url(../slider/rail.jpg) 12px 26px no-repeat";
+		slider.style.background="#ffffff url(../slider_ilo/slider_bg.png) 0 0 no-repeat";//"#ffffff url(../slider/rail.jpg) 12px 26px no-repeat";
 		//slider.style.border="1px dotted "+this.color;
 
 		var knap=document.createElement("div");
@@ -76,7 +76,7 @@
 		knap.style.left=5+knapinit+"px";
 		knap.style.width=15+"px";
 		knap.style.height=20+"px";
-		knap.style.background="url(../slider/pil.jpg) 0 0 no-repeat";
+		knap.style.background="url(../slider_ilo/pil.png) 0 0 no-repeat";
 
 		//knap.onmousedown=knapNed;
 		//knap.onmouseup=knapOp;
@@ -88,7 +88,7 @@
 		minc.style.position="absolute";
 		minc.style.top=4+"px";
 		minc.style.left=6+"px";
-		minc.style.font="11px verdana";
+		minc.style.font="12px 'Noto Sans',sans-serif";
 		minc.style.color=this.color;
 		minc.innerHTML=this.min;
 		slider.appendChild(minc);
@@ -98,7 +98,7 @@
 		maxc.style.position="absolute";
 		maxc.style.top=4+"px";
 		maxc.style.right=6+"px";
-		maxc.style.font="11px verdana";
+		maxc.style.font="12px 'Noto Sans',sans-serif";
 		maxc.style.color=this.color;
 		maxc.innerHTML=this.max;
 		slider.appendChild(maxc);
@@ -109,11 +109,11 @@
 		valc.style.top=4+"px";
 		valc.style.left=100-this.navn.length*4+"px";
 		valc.style.padding=1+"px";
-		valc.style.font="bold 11px verdana";
+		valc.style.font="12px 'Noto Sans',sans-serif";
 		valc.style.color=this.color;
-		valc.style.background="#ddd";
-		valc.style.border="1px inset #ccc";
-		valc.innerHTML=this.navn+"="+startval;//this.val();
+		// valc.style.background="#ddd";
+		// valc.style.border="1px inset #ccc";
+		valc.innerHTML=this.navn+"="+startval.toString().replace(".",",");//this.val();
 		slider.appendChild(valc);
 
 		document.getElementById("controls").appendChild(slider);
@@ -139,7 +139,7 @@
 		var sliderPos=parseInt(document.getElementById(this.knapId).style.left);
 		var midtPos=sliderPos-5;
 		var scaledPos=(midtPos/200*(this.max-this.min)+this.min).toFixed(this.antdec)
-		document.getElementById(this.valId).innerHTML=this.navn+"="+scaledPos;
+		document.getElementById(this.valId).innerHTML=this.navn+"="+scaledPos.toString().replace(".",",");
 		return scaledPos;
 	};
 
