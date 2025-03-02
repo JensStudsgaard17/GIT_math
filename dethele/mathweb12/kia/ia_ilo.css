@@ -1,0 +1,101 @@
+canvas, .controlsContainer{
+
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.interactive-exercise{
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 400px;
+}
+
+
+.interactive-exercise .hd{
+
+}
+
+.interactive-exercise .hd h1{
+	display: none;
+}
+
+canvas{
+	position:absolute;
+	margin: 0;
+	padding: 0;
+	top: 15px;
+	background-color: white;
+	border: 1px solid #aaa;
+	border-radius: 5px;
+}
+
+.controlsContainer{
+	position: absolute;
+	left: 0px;
+	top: 428px;
+	width: 400px;
+	margin: 0;
+	padding:0;
+}
+
+.controls{
+	padding; 0;
+	margin:0;
+	font-size: 14px;
+}
+
+.divout{
+	cursor:default;
+	font-size: 14px;
+	position:absolute;
+}
+
+.tekst{
+	font-size: 14px;
+}
+
+.txtin{
+	width:50px;
+	text-align:right;
+}
+
+.button{
+	font-size: 0.8em;
+	position:absolute;
+	cursor:pointer;
+}
+
+.text{
+	width: 50px;
+	text-align: center;
+	font-weight: bold;
+	border: none;
+	background: #ffffff;
+}
+
+.result{
+	font: 14px arial;
+	color: #000000;
+	padding: 5px;
+	width: 390px;
+	background-color: #E2E2E2;
+	border-top: 1px solid #C2C2C2;
+	border-left: 1px solid #C2C2C2;
+	border-bottom: 1px solid #EBEBEB;
+	border-right: 1px solid #EBEBEB;
+}
+
+.comment{
+	font: 11px arial;
+	color: #777777;
+}

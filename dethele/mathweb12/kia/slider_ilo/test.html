@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Slider Horisontal</title>
+<script src="../IA.js"></script>
+<script src="slider.js"></script>
+<script>
+onload=function(){
+	var sh1=new SliderH(100,10,-2,2,"sh1","ss1","black");
+	var sh2=new SliderH(100,70,2,6,"sh2","ss2","red");
+	var sh3=new SliderH(100,130,0,1,"sh3","ss3","blue");
+
+	Skriv=function(){
+		if (sh1.sel()) {
+			document.getElementById("visPos").innerHTML=sh1.val().toFixed(2);
+		};
+	};
+	IA.addEvent(document.getElementById("ss1"),"mousemove",Skriv);
+}
+</script>
+
+<style>
+
+</style>
+</head>
+<body>
+<div id="visPos"></div>
+</body>
+</html>

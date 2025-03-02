@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Font and button test – Ver. 2.2</title>
+<link rel="stylesheet" href="../_repos/jquery/jquery-ui.css">
+<link href="webfonts.css" rel="stylesheet" type="text/css">
+<link href="common_styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>H1-test Noto Sans qwerty æøå</h1>
+    <h2>H2-test Noto Sans qwerty æøå</h2>
+    <h3>H3-test Noto Sans qwerty æøå</h3>
+    <p>p Noto Sans normal 12px qwerty æøå. Almost before we knew it, we had left the ground.</p>
+    <p><em>p Noto Sans italic qwerty æøå</em></p>
+    <p><strong>p Noto Sans strong qwerty æøå</strong></p>
+    <p style="font-family: sans-serif">p sans-serif normal 12px qwerty æøå. Almost before we knew it, we had left the ground.</p>
+    <p style="font-family: Arial">p Arial normal 12px qwerty æøå. Almost before we knew it, we had left the ground.</p>
+    <hr>
+    <div id="testbuttons1" style="clear: both">
+        <button class="ILO_CTA_Primary_Small">Primary small cta</button>
+        <button class="ILO_CTA_Secondary_Small">Secondary small cta</button>
+        <button class="ILO_CTA_Secondary_Small">Another secondary small cta</button>
+    </div>
+    <div id="testbuttons2" style="clear: both">
+        <button class="ILO_CTA_Primary_Small disabled">Primary small cta, disablet</button>
+        <button class="ILO_CTA_Secondary_Small disabled">A third secondary small cta, disablet</button>
+    </div>
+    <div id="testbuttons3" style="clear: both">
+        <button class="ILO_CTA_Secondary_Small">
+            <span class="btn_content">Secondary small cta with svg icon right
+                <span class="btn_icon">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9103 9.40028C17.9096 9.3451 17.8999 9.29042 17.8814 9.23841L17.8467 9.1806C17.8326 9.1566 17.8172 9.13344 17.8005 9.11122L12.262 3.04091C12.1827 2.96723 12.0786 2.92593 11.9703 2.92512C11.862 2.92432 11.7573 2.96407 11.6768 3.03656C11.5964 3.10905 11.546 3.20903 11.5355 3.31682C11.525 3.42462 11.5553 3.53242 11.6203 3.61903L16.4881 8.96669H1.01172C0.896723 8.96669 0.786436 9.01237 0.705122 9.09369C0.623807 9.175 0.578125 9.28529 0.578125 9.40028C0.578125 9.51528 0.623807 9.62557 0.705122 9.70688C0.786436 9.78819 0.896723 9.83388 1.01172 9.83388H16.4997L11.6203 15.2972C11.5819 15.3393 11.5523 15.3886 11.5329 15.4422C11.5136 15.4958 11.5051 15.5526 11.5078 15.6096C11.5104 15.6665 11.5243 15.7223 11.5486 15.7738C11.5729 15.8254 11.6071 15.8716 11.6492 15.91C11.7291 15.9804 11.8318 16.0194 11.9383 16.0198C11.9996 16.021 12.0603 16.0087 12.1163 15.9837C12.1723 15.9588 12.222 15.9217 12.262 15.8753L17.7889 9.68935C17.8045 9.66752 17.8181 9.6443 17.8294 9.61997L17.8698 9.56216C17.893 9.5111 17.9067 9.45625 17.9103 9.40028Z" fill="currentColor"/>
+                        </svg>
+                </span>
+            </span>
+        </button>
+        <button class="ILO_CTA_Secondary_Small">
+            <span class="btn_content">
+                <span class="btn_icon_left">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.589688 9.51012C0.590378 9.56529 0.600144 9.61998 0.618594 9.67199L0.653283 9.7298C0.667351 9.7538 0.682793 9.77696 0.699532 9.79918L6.23797 15.8695C6.31735 15.9432 6.42142 15.9845 6.52972 15.9853C6.63802 15.9861 6.7427 15.9463 6.82316 15.8738C6.90362 15.8013 6.95405 15.7014 6.96451 15.5936C6.97497 15.4858 6.94471 15.378 6.87969 15.2914L2.01188 9.94371L17.4883 9.94371C17.6033 9.94371 17.7136 9.89803 17.7949 9.81671C17.8762 9.7354 17.9219 9.62511 17.9219 9.51012C17.9219 9.39512 17.8762 9.28483 17.7949 9.20352C17.7136 9.12221 17.6033 9.07652 17.4883 9.07652L2.00031 9.07652L6.87969 3.61324C6.91805 3.57112 6.94774 3.52185 6.96705 3.46824C6.98637 3.41464 6.99493 3.35776 6.99224 3.30084C6.98956 3.24393 6.97568 3.18811 6.95141 3.13656C6.92714 3.08501 6.89294 3.03875 6.85078 3.00043C6.77092 2.93 6.6682 2.89096 6.56172 2.89058C6.50044 2.88935 6.43965 2.90167 6.38369 2.92666C6.32772 2.95164 6.27797 2.98868 6.23797 3.03512L0.711094 9.22105C0.695487 9.24288 0.681939 9.2661 0.670626 9.29043L0.630156 9.34824C0.606965 9.3993 0.593253 9.45415 0.589688 9.51012Z" fill="currentColor" />
+                    </svg>
+                </span>Secondary small cta with svg icon left
+            </span>
+        </button>
+    </div>
+    <div id="testbuttons4" style="clear: both">
+        <button class="ILO_CTA_Tertiary_Small"><span>Tertiary  cta</span></button>
+    </div>
+    <div id="testbuttons5" style="clear: both">
+        <button class="ILO_CTA_Primary">Primary standard cta</button>
+        <button class="ILO_CTA_Secondary">Secondary standard cta</button>
+        <button class="ILO_CTA_Tertiary">Tertiary standard cta</button>
+        <button class="ILO_CTA_Primary disabled">Primary standard disabled</button>
+        <button class="ILO_CTA_Secondary" disabled="disabled">Secondary standard disabled</button>
+    </div>    
+    <hr style="clear: both">
+    <p>Input felter, tekst, ILO21</p>
+    <div class="example2">
+        <input class="ILO_textinput" type="text" value="standard" />
+        <input class="ILO_textinput" type="text" value="disabled" disabled />
+    </div>
+    <hr style="clear: both">
+    <p>Input felter, tekst, small, ILO21</p>
+    <div class="example2">
+        <input class="ILO_textinput_small" type="text" value="small"/>
+        <input class="ILO_textinput_small" type="text" value="small disabled" disabled />
+    </div>
+    <hr style="clear: both">
+    <p>Input felter, textarea, ILO21</p>
+    <div class="example1">
+        <textarea class="ILO_textarea">ILO21 textarea felt</textarea>
+        <textarea class="ILO_textarea" readonly>ILO21 textarea readonly felt</textarea>
+        <textarea class="ILO_textarea" disabled>ILO21 textarea disabled felt</textarea>
+    </div>
+<!--     <hr style="clear: both">
+   <p>Select, normal</p>
+    <div class="example1">
+        <select name="pets1" id="pet-select1">
+            <option value="">Vælg et dyr</option>
+            <option value="dog">Hest</option>
+        </select>
+    </div> -->
+    <hr style="clear: both">
+    <p>Select, ILO21</p>
+    <div class="example2">
+        <select name="pets2" id="pet-select2" class="ILO_select">
+            <option value="">Vælg et dyr</option>
+            <option value="">Gris</option>
+            <option value="">Får</option>
+        </select>
+    </div>
+<!--    <hr style="clear: both">
+    <p>Checkboxes, normal</p>
+    <div class="example1">
+        <div>
+            <input type="checkbox" value="" />
+            <label>En lille hest</label>
+        </div>
+        <div>
+            <input type="checkbox" value="" checked />
+            <label>En stor hest</label>
+        </div>
+        <div>
+            <input type="checkbox" value="" checked disabled/>
+            <label>En stor hest</label>
+        </div>
+    </div> -->
+    <hr style="clear: both">
+    <p>Checkboxes, ILO21</p>
+    <div class="example2" style="display: flex">
+        <div>
+            <input class="ILO_checkbox" type="checkbox" value="" id="lillehest" />
+            <label for="lillehest">En lille hest</label>
+        </div>
+        <div>
+            <input class="ILO_checkbox" type="checkbox" value="" id="storhest" checked />
+            <label for="storhest">En stor hest</label>
+        </div>
+        <div>
+            <input class="ILO_checkbox"  type="checkbox" value="" id="almhest" checked disabled />
+            <label for="almhest">En almindelig hest</label>
+        </div>
+    </div>
+<!--    <hr style="clear: both">
+    <p>Radiobuttons, normal</p>
+    <div class="example2" style="display: flex">
+        <div>
+            <input type="radio" value="En lille hest" />
+            <label for="huey">En stor hest</label>
+        </div>
+        <div>
+            <input type="radio" value="En stor hest" checked />
+            <label>En lille hest</label>
+        </div>
+        <div>
+            <input type="radio" value="En stor hest" checked disabled />
+            <label>Et føl</label>
+        </div>
+    </div> -->
+    <hr style="clear: both">
+    <p>Radiobuttons, ILO21</p>
+    <div class="example2" style="display: flex">
+        <div>
+            <input class="ILO_radiobutton" type="radio" name="sammenhold" value="En lille hest" id="enlillehest" />
+            <label for="enlillehest">En lille hest</label>
+        </div>
+        <div>
+            <input class="ILO_radiobutton" type="radio" name="sammenhold" value="En stor hest" id="enstorhest" checked />
+            <label for="enstorhest">En stor hest</label>
+        </div>
+        <div>
+            <input class="ILO_radiobutton" type="radio" name="single" value="En mikro hest" id="etfoel" checked disabled />
+            <label for="etfoel">Et føl</label>
+        </div>
+    </div>
+<p>Label før radio:</p>
+    <div class="example2" style="display: flex">
+        <div>
+            <label class="ILO_label" for="tofoel">To føl</label>
+            <input class="ILO_radiobutton" type="radio" name="labelfoer" value="To små heste" id="tofoel"  />
+        </div>
+        <div>
+            <label class="ILO_label" for="trefoel">Tre føl</label>
+            <input class="ILO_radiobutton" type="radio" name="labelfoer" value="Tre små heset" id="trefoel"  />
+        </div>
+    </div>
+<!--    <hr style="clear: both">
+    <p>Sliders, normal</p>
+    <div class="example1">
+        <div><input type="range" min="1" max="100" value="42" /></div>
+    </div>
+    <div class="example2">
+        <div><input type="range" min="1" max="100" value="70" disabled/></div>
+    </div>    -->
+    <hr style="clear: both">
+    <p>Standards sliders, ILO21</p>
+    <div class="example1">
+        <div style="margin: 2em"><input class="ILO_stslider" type="range" min="1" max="100" value="42" /></div>
+    </div>
+    <div class="example2">
+        <div style="margin: 2em"><input class="ILO_stslider" type="range" min="1" max="100" value="70" disabled="disabled" /></div>
+    </div>    
+    <hr style="clear: both">
+    <p>Slider-elementer, ILO21</p>
+    <div class="example1">
+        <div style="margin: 2em"><div class="ILO_slidertrack"></div></div>
+    </div>
+    <div class="example2">
+        <div style="margin: 2em"><div class="ILO_sliderthumb"></div></div>
+    </div>    
+    <hr style="clear: both">
+    
+    <p>Sliders, jQuery UI styling:</p>
+    <div id="jui-slider1" class="jui-sliders" style="margin: 2em"></div>
+    <p>ILO21 modified styling:</p>
+    <div id="jui-slider2" class="jui-sliders ILO_Slider" style="margin: 2em"></div>
+    <div id="jui-slider3" class="ILO_Slider" style="margin: 2em"></div>
+    <hr style="clear: both">
+<div data-iframe-height=""></div>    
+<script src="../_repos/jquery/jquery-3.7.1.min.js"></script>
+<script src="../_repos/jquery/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="../_common/js/iframeResizer.contentWindow.min.js" defer></script>
+</body>
+</html>

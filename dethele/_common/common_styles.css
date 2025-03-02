@@ -1,0 +1,419 @@
+@charset "UTF-8";
+/* CSS Document ILO 2021 */
+
+/* main common styles */
+body, input, button, select, option, textarea {
+    font-family: 'Noto Sans', sans-serif;
+}
+body {
+    font-size: 12px;
+    line-height: 1.25;
+    margin: 0;
+}
+input, button, select, option, textarea {
+    font-size: 100%;
+}
+/* buttons */
+.ILO_CTA_Primary, 
+.ILO_CTA_Secondary, 
+.ILO_CTA_Tertiary,
+.ILO_CTA_Primary_Small,
+.ILO_CTA_Secondary_Small,
+.ILO_CTA_Tertiary_Small {
+    box-sizing: border-box;
+    display: inline-flex;
+    user-select: none;
+/*    outline: 0; */
+    position: relative;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 2em;
+    padding: 0 1em;
+}
+.ILO_CTA_Primary, 
+.ILO_CTA_Secondary, 
+.ILO_CTA_Tertiary {
+    font-size: 15px;
+    line-height: 17px;    
+}
+.ILO_CTA_Primary, 
+.ILO_CTA_Primary_Small {
+    border-style: none;
+    color: #FFFFFF;
+    background-color: #333333;
+}
+.ILO_CTA_Secondary,
+.ILO_CTA_Secondary_Small {
+    color: #333333;
+    background-color: #FFFFFF;
+    border: 1px solid currentColor;
+}
+.ILO_CTA_Tertiary,
+.ILO_CTA_Tertiary_Small {
+    background-color: transparent;
+    border-style: none;
+    color: #333333;
+}
+.ILO_CTA_Tertiary_Small {
+    padding: 0 5px;
+    height: auto;
+}
+/* hover behaviour */
+.ILO_CTA_Primary:hover,
+.ILO_CTA_Primary_Small:hover {
+    color: #EEEEEE;
+    background-color: #000000;
+}
+.ILO_CTA_Secondary:hover,
+.ILO_CTA_Secondary_Small:hover {
+    color: #000000;
+    background-color: #EEEEEE;
+}
+.ILO_CTA_Tertiary:hover,
+.ILO_CTA_Tertiary_Small:hover {
+    color: #000000;
+    background-color: #EEEEEE;
+}
+/* diablet */
+.ILO_CTA_Primary.disabled,
+.ILO_CTA_Secondary.disabled,
+.ILO_CTA_Primary:disabled,
+.ILO_CTA_Secondary:disabled,
+.ILO_CTA_Primary_Small.disabled,
+.ILO_CTA_Secondary_Small.disabled,
+.ILO_CTA_Primary_Small:disabled,
+.ILO_CTA_Secondary_Small:disabled {
+    cursor: not-allowed;
+}
+.ILO_CTA_Primary.disabled,
+.ILO_CTA_Primary.disabled:hover,
+.ILO_CTA_Primary:disabled,
+.ILO_CTA_Primary_Small.disabled,
+.ILO_CTA_Primary_Small.disabled:hover {
+    color: #FFFFFF;
+    border-color: #333333;    
+    background-color: #333333;
+    opacity: 0.3;
+}
+.ILO_CTA_Secondary.disabled,
+.ILO_CTA_Secondary.disabled:hover,
+.ILO_CTA_Secondary:disabled,
+.ILO_CTA_Secondary_Small.disabled,
+.ILO_CTA_Secondary_Small.disabled:hover {
+    color: #333333;
+    border-color: currentColor;
+    background-color: #FFFFFF;
+    opacity: 0.3;
+}
+.btn_content {
+    align-items: center;
+    position: relative;
+    display: flex;
+}
+.btn_icon,
+.btn_icon_left {
+    display: inline-flex;
+    align-items: center;
+}
+.btn_icon {
+    margin-left: 0.5em;
+}
+.btn_icon_left {
+    margin-left: 0;
+    margin-right: 0.5em;
+}
+/* Text input */ 
+input.ILO_textinput,
+input.ILO_textinput_small,
+.ILO_textarea {
+    font-weight: 400;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+.ILO_textarea {
+    resize: none;
+}
+input.ILO_textinput {
+    padding: 4px 16px;
+    font-size: 15px;
+    line-height: 17px;
+}
+input.ILO_textinput:disabled,
+input.ILO_textinput_small:disabled, 
+.ILO_textarea:disabled, 
+input.ILO_textinput.disabled,
+input.ILO_textinput_small.disabled,
+.ILO_textarea.disabled {
+    background: #F8F8F8;
+    border: 1px solid #DDDDDD;
+}
+/* Select */
+select.ILO_select {
+    background: #FFFFFF;
+    border: 1.5px solid #EEEEEE;
+    box-sizing: border-box;
+    border-radius: 5px;
+    min-width: 120px;
+    padding: 1px 16px;
+}
+/* Checkboxes */
+input.ILO_checkbox {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: #ffffff;
+    /* Not removed via appearance */
+    cursor: pointer;
+    margin: 0; 
+    padding:4px 6px;
+    font: inherit;
+    color: currentColor;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+    display: inline-flex;
+    place-content: center;
+}
+input.ILO_checkbox::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #333333;
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+}
+input.ILO_checkbox:checked::before {
+    transform: scale(1.2);
+}
+input.ILO_checkbox:disabled,
+input.ILO_checkbox.disabled {
+    color: #959495;
+    cursor: not-allowed;
+}
+input.ILO_checkbox:disabled::before,
+input.ILO_checkbox.disabled::before {
+    box-shadow: inset 1em 1em #959495;
+}
+/* Radiobuttons */
+input.ILO_radiobutton {
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 4px;
+    font: inherit;
+    color: currentColor;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: inline-flex;
+    place-content: center;
+}
+input.ILO_radiobutton::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: .65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #333333;
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+}
+input.ILO_radiobutton:disabled,
+input.ILO_radiobutton.disabled {
+    color: #959495;
+    cursor: not-allowed;
+}
+input.ILO_radiobutton:disabled::before,
+input.ILO_radiobutton.disabled::before {
+    background-color: #959495;
+    box-shadow: inset 1em 1em #959495;
+    border: 0em solid #959495;    
+}
+input.ILO_radiobutton:checked::before {
+    transform: scale(1);
+}
+/* labels after and before */
+input.ILO_checkbox + label,
+input.ILO_radiobutton + label, 
+label.ILO_label {
+    display: inline-flex;
+    padding: 0.3em;
+}
+input[disabled] + label {
+    color: #959495
+}
+/* Sliders – standard */
+input.ILO_stslider {
+    width: 100%;
+    margin: 7px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+input.ILO_stslider:focus {
+/*    outline: none; */
+}
+input.ILO_stslider::-webkit-slider-runnable-track {
+    background: #333333;
+    border: 1.1px solid #333333;
+    border-radius: 1px;
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+}
+input.ILO_stslider::-webkit-slider-thumb {
+    margin-top: -8.1px;
+    width: 18px;
+    height: 18px;
+    background: #333333;
+    border: 0;
+    border-radius: 16px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    padding: 10px;
+}
+input.ILO_stslider:focus::-webkit-slider-runnable-track {
+    background: #404040;
+}
+input.ILO_stslider::-moz-range-track,
+.ILO_slidertrack {
+    background: #333333;
+    border: 1.1px solid #333333;
+    border-radius: 1px;
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+}
+input.ILO_stslider::-moz-range-thumb,
+.ILO_sliderthumb {
+    width: 16px;
+    height: 16px;
+    background: #333333;
+    border: 0;
+    border-radius: 16px;
+    cursor: pointer;
+}
+input.ILO_stslider::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 9.6px 0;
+    color: transparent;
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+}
+input.ILO_stslider::-ms-fill-lower {
+    background: #262626;
+    border: 1.1px solid #333333;
+    border-radius: 2px;
+}
+input.ILO_stslider::-ms-fill-upper {
+    background: #333333;
+    border: 1.1px solid #333333;
+    border-radius: 2px;
+}
+input.ILO_stslider::-ms-thumb {
+    width: 16px;
+    height: 16px;
+    background: #333333;
+    border: 0;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+}
+input.ILO_stslider:focus::-ms-fill-lower {
+    background: #333333;
+}
+input.ILO_stslider:focus::-ms-fill-upper {
+    background: #404040;
+}
+@supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input.ILO_stslider {
+        margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+}
+/* Range input progress - does not work in all browsers
+- firefox 
+input.ILO_stslider::-moz-range-progress {
+  background-color: green;
+} 
+- ms
+input.ILO_stslider::-ms-fill-lower {
+  background: green;
+} 
+*/
+/* Disabled state */
+input.ILO_stslider:disabled::-moz-range-track,
+input.ILO_stslider:disabled::-webkit-slider-runnable-track,
+input.ILO_stslider:disabled::-webkit-slider-thumb,
+input.ILO_stslider.disabled::-moz-range-track,
+input.ILO_stslider.disabled::-webkit-slider-runnable-track,
+input.ILO_stslider.disabled::-webkit-slider-thumb {
+    background: #959495;
+    border: 1.1px solid #959495;
+    cursor: not-allowed;
+}
+input.ILO_stslider:disabled::-moz-range-thumb,
+input.ILO_stslider.disabled::-moz-range-thumb {
+    background-color: #959495;
+    border: 1.1px solid #959495;
+    cursor: not-allowed;
+}
+/* jquery ui slider modifications */
+.ILO_Slider .ui-state-default {
+    background-image: none;
+}
+.ILO_Slider,
+.ILO_Slider .ui-slider-range,
+.ILO_Slider .ui-state-default {
+    background: #333333;
+    cursor: pointer;
+}
+.ILO_Slider,
+.ILO_Slider.ui-widget.ui-widget-content {
+    border: 1px solid #333333;
+}
+.ILO_Slider .ui-state-default {
+    border: 0;
+}
+.ILO_Slider .ui-state-default:focus {
+    outline: none;
+}
+.ILO_Slider.ui-slider-horizontal {
+    height: 0.2em;
+}
+.ILO_Slider.ui-slider-horizontal .ui-slider-handle {
+    top: -0.5em;
+    margin-left: -0.6em;
+}
+.ILO_Slider.ui-slider-vertical {
+    width: 0.2em;
+}
+.ILO_Slider.ui-slider-vertical .ui-slider-handle {
+    left: -0.5em;
+    margin-top: -0.6em;
+}
+.ILO_Slider.ui-slider .ui-slider-handle {
+    height: 16px;
+    width: 16px
+}
+.ILO_Slider.ui-corner-all .ui-slider-handle {
+    border-radius: 16px;
+}
