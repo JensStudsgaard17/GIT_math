@@ -1,7 +1,7 @@
 ﻿//( function () {//We need a scope/selfexecuting function, so we dont pollute the global scope - i.e. the window objekt
 //Når alle funktioner i ia.js er puttet ind i IA-objektet er vi kørende og kan sætte lokal-scope igen
 
-var xlabels=0, ylabels=0,r11=true,r13=false,r14=false, a=2, b=3;
+var xlabels=0, ylabels=0,r11=false,r13=false,r14=true, a=2, b=3;
 
 function fix(x){
 	return x.toString().replace(".",",");
@@ -264,10 +264,10 @@ function init(){
 	if (typeof document.addEventListener!="undefined"){//could be a TD
 		IA.addEvent(document.getElementById("ss2"),"touchmove",testb);
 	};
-	IA.addEvent(hid("r1"),"click",r1f);
+	//IA.addEvent(hid("r1"),"click",r1f);
 	IA.addEvent(hid("r2"),"click",r2f);
 	IA.addEvent(hid("r3"),"click",r3f);
-
+	r3f();
 	tegn();
 };
 
@@ -280,7 +280,7 @@ function slut(){
 		IA.removeEvent(document.getElementById("ss2"),"touchmove",testb);
 	};
 	IA.removeEvent(document.getElementById("ss2"),"mousemove",testb);
-	IA.removeEvent(hid("r1"),"click",r1f);
+	//IA.removeEvent(hid("r1"),"click",r1f);
 	IA.removeEvent(hid("r2"),"click",r2f);
 	IA.removeEvent(hid("r3"),"click",r3f);
 	IA.removeEvent(window,"unload",slut);
