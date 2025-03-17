@@ -174,7 +174,7 @@ function init(){
 	Labels();
 
 	var sh1=new SliderH(0,25,0.3,2.3,"a","sh1","ss1","#1CAE27",2,2);
-	var sh2=new SliderH(0,75,1,201,"b","sh2","ss2","#DDB30A",1,3);
+	var sh2=new SliderH(0,75,1,101,"b","sh2","ss2","#DDB30A",1,3);
 
 	//POINTS
 	P=[]; definePoints();
